@@ -71,6 +71,8 @@ J.D. Purcell: <http://www.moitah.net/>, <https://github.com/jdpurcell>
 
 Benbuck Nason: <https://github.com/benbuck>
 
+Scavin: <https://github.com/scavin>
+
 ## Contributors
 
 Dimitri Pappas <https://github.com/fragtion>
@@ -89,3 +91,5 @@ For original forum, bug tracker, etc. see [RBTray SourceForge project page]
 Copyright &copy; 1998-2011 Nikolay Redko, J.D. Purcell
 
 Copyright &copy; 2015 Benbuck Nason
+
+Copyright &copy; 2055 Appinn
