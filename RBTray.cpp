@@ -1,8 +1,9 @@
 // ****************************************************************************
 //
 // RBTray
-// Copyright (C) 1998-2010  Nikolay Redko, J.D. Purcell
+// Copyright (C) 1998-2011 Nikolay Redko, J.D. Purcell
 // Copyright (C) 2015 Benbuck Nason
+// Copyright (C) 2023 scavin
 //
 // This program is free software; you can redistribute it and/or modify
 // it under the terms of the GNU General Public License as published by
@@ -196,11 +197,11 @@ void ExecuteMenu() {
         MessageBox(NULL, L"Error creating menu.", L"RBTray", MB_OK | MB_ICONERROR);
         return;
     }
-    AppendMenu(hMenu, MF_STRING, IDM_ABOUT,   L"About RBTray");
-    AppendMenu(hMenu, MF_STRING, IDM_EXIT,    L"Exit RBTray");
+    AppendMenu(hMenu, MF_STRING, IDM_ABOUT,   L"关于 RBTray");
+    AppendMenu(hMenu, MF_STRING, IDM_EXIT,    L"退出 RBTray");
     AppendMenu(hMenu, MF_SEPARATOR, 0, NULL); //--------------
-    AppendMenu(hMenu, MF_STRING, IDM_CLOSE,   L"Close Window");
-    AppendMenu(hMenu, MF_STRING, IDM_RESTORE, L"Restore Window");
+    AppendMenu(hMenu, MF_STRING, IDM_CLOSE,   L"关闭窗口");
+    AppendMenu(hMenu, MF_STRING, IDM_RESTORE, L"恢复窗口");
 
     GetCursorPos(&point);
     SetForegroundWindow(_hwndHook);
