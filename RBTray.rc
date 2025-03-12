@@ -17,7 +17,7 @@
 
 #if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
 LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
-#pragma code_page(1252)
+#pragma code_page(65001)
 
 #ifdef APSTUDIO_INVOKED
 /////////////////////////////////////////////////////////////////////////////
@@ -50,20 +50,22 @@ END
 // Dialog
 //
 
-IDD_ABOUT DIALOGEX 0, 0, 199, 145
+IDD_ABOUT DIALOGEX 0, 0, 199, 175
 STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | DS_CENTER | WS_POPUP | WS_CAPTION | WS_SYSMENU
-CAPTION "About RBTray"
+CAPTION "关于 RBTray"
 FONT 8, "MS Shell Dlg", 400, 0, 0x1
 BEGIN
     ICON            IDI_RBTRAY,IDC_STATIC,7,7,20,20
-    LTEXT           "RBTray 4.14\nhttps://github.com/benbuck/rbtray",IDC_STATIC,38,7,151,20
+    LTEXT           "RBTray 4.15\nhttps://www.appinn.com/rbtray-2025/",IDC_STATIC,38,7,151,20
     LTEXT           "This program is distributed under the GNU General Public License.",IDC_STATIC,38,27,151,20
     LTEXT           "Copyright (c) 1998-2011",IDC_STATIC,38,47,151,10
     LTEXT           "Nikolay Redko\r\nhttp://rbtray.sourceforge.net/",IDC_STATIC,38,56,151,20
     LTEXT           "J.D. Purcell\r\nhttp://www.moitah.net/",IDC_STATIC,38,72,151,20
     LTEXT           "Copyright (c) 2015",IDC_STATIC,38,92,151,10
     LTEXT           "Benbuck Nason\r\nhttps://github.com/benbuck/",IDC_STATIC,38,100,151,20
-    DEFPUSHBUTTON   "OK",IDOK,75,125,50,14
+    LTEXT           "Copyright (c) 2025",IDC_STATIC,38,120,151,10
+    LTEXT           "小众软件\r\nhttps://appinn.com/",IDC_STATIC,38,128,151,20
+    DEFPUSHBUTTON   "确定",IDOK,75,155,50,14
 END
 
 
@@ -102,8 +104,8 @@ IDI_RBTRAY              ICON                    "RBTray.ico"
 //
 
 VS_VERSION_INFO VERSIONINFO
- FILEVERSION 4,14,0,0
- PRODUCTVERSION 4,14,0,0
+ FILEVERSION 4,15,0,0
+ PRODUCTVERSION 4,15,0,0
  FILEFLAGSMASK 0x17L
 #ifdef _DEBUG
  FILEFLAGS 0x1L
@@ -119,12 +121,12 @@ BEGIN
         BLOCK "040904b0"
         BEGIN
             VALUE "FileDescription", "RBTray"
-            VALUE "FileVersion", "4.14.0.0"
+            VALUE "FileVersion", "4.15.0.0"
             VALUE "InternalName", "RBTray"
-            VALUE "LegalCopyright", "Copyright (c) 1998-2011 Nikolay Redko, J.D. Purcell; Copyright (c) 2015 Benbuck Nason"
+            VALUE "LegalCopyright", "Copyright (c) 1998-2011 Nikolay Redko, J.D. Purcell; Copyright (c) 2015 Benbuck Nason; Copyright (c) 2023 scavin"
             VALUE "OriginalFilename", "RBTray.exe"
             VALUE "ProductName", "RBTray"
-            VALUE "ProductVersion", "4.14.0.0"
+            VALUE "ProductVersion", "4.15.0.0"
         END
     END
     BLOCK "VarFileInfo"
@@ -158,4 +160,3 @@ END
 
 /////////////////////////////////////////////////////////////////////////////
 #endif    // not APSTUDIO_INVOKED
-
